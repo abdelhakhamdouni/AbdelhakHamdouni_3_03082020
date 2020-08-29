@@ -1,0 +1,125 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0.9em;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS du site  */
+@media (min-width: 420px) {
+  .site {
+    width: 420px;
+    margin: 0 auto;
+  }
+}
+.site {
+  overflow: hidden;
+}
+
+.header .site__title {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 3em;
+  font-family: "Shrikhand", cursive;
+  box-shadow: 0 0 5px 3px #949494;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  z-index: 999;
+}
+.header .location {
+  text-align: center;
+  padding: 15px;
+  background-color: #dadada;
+  font-weight: 600;
+  color: #424242;
+}
+.header .location span {
+  margin-right: 15px;
+}
+.header .intro {
+  background-color: #f0efef;
+  display: flex;
+  justify-content: space space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 10% 15%;
+}
+.header .intro .intro__title {
+  font-size: 1.3em;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+.header .intro .intro__text {
+  text-align: center;
+  margin-bottom: 40px;
+  color: gray;
+}
+.header .intro .intro__action {
+  border: none;
+  padding: 15px 30px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 40px;
+  font-size: 1.3em;
+  color: white;
+  box-shadow: 0 0 3px rgba(128, 128, 128, 0.849);
+  cursor: pointer;
+}
+.header .intro .intro__action:active, .header .intro .intro__action:focus {
+  outline: 0;
+}
+.header .intro .intro__action:hover {
+  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
+  transform: scale(1.01);
+}
+
+/*# sourceMappingURL=app.css.map */

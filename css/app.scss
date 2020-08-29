@@ -1,0 +1,80 @@
+@import 'helper.scss';
+
+    $primary: #9356DC;
+    $secondary: #FF79DA;
+    $tertiare: #99E2D0;
+    $gray: #666666;
+
+
+/* CSS du site  */
+@media (min-width: 420px){
+    .site{
+        width: 420px;
+        margin: 0 auto;
+    }
+}
+.site{
+    overflow: hidden;
+}
+.header{
+    .site__title{
+        text-align: center;
+        padding: 20px 0;
+        font-size: 3em;
+        font-family: 'Shrikhand', cursive;
+        box-shadow: 0 0 5px 3px rgb(148, 148, 148);
+        width: 100%;
+        background-color: white;
+        position: relative;
+        z-index: 999;
+    }
+    .location{
+        text-align: center;
+        padding: 15px;
+        background-color: rgb(218, 218, 218);
+        font-weight: 600;
+        color: #424242;
+        span{
+            margin-right: 15px;
+        }
+    }
+    .intro{
+        background-color: rgb(240, 239, 239);
+        display: flex;
+        justify-content: space space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 10% 15%;
+        .intro__title{
+            font-size: 1.3em;
+            font-weight: 800;
+            margin-bottom: 40px;
+        }
+        .intro__text{
+            text-align: center;
+            margin-bottom: 40px;
+            color: gray;
+        }
+        .intro__action{
+            border: none;
+            padding: 15px 30px;
+            background: linear-gradient(to bottom right, $secondary, $primary);
+            border-radius: 40px;
+            font-size: 1.3em;
+            color: white;
+            box-shadow: 0 0 3px rgba(128, 128, 128, 0.849);
+            cursor: pointer;
+            &:active, &:focus{
+                outline: 0;
+            }
+            &:hover{
+            background: linear-gradient(to bottom right, $primary , $secondary);
+            transform: scale(1.01);
+
+            }
+        }
+    
+
+    }
+
+}
