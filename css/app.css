@@ -161,7 +161,7 @@ table {
 }
 
 .header {
-  padding: 4rem 0;
+  padding: 0 0 4rem 0;
 }
 .header .site__title {
   text-align: center;
