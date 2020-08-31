@@ -10,7 +10,16 @@
     <title>OhMyfood | réservez le menu qui vous convient</title>
 </head>
 <body>
+    
     <section class="site">
+        <!-- <div class="loader__container">
+            <div class="loader">
+                <div class="image">
+                </div>
+                <span class="fas fa-utensils"></span>
+            </div>
+            
+        </div> -->
         <header class="header">
             <h1 class="site__title">ohmyfood</h1>
             <section class="location">
@@ -34,14 +43,17 @@
                 <section class="help__steps">
                     <ul>
                         <li class="step">
+                            <span class="number">1</span>
                             <span class="fas fa-mobile"></span>
                             Chose a restaurant
                         </li>
                         <li class="step">
+                            <span class="number">2</span>
                             <span class="fas fa-list"></span>
                             Create your menu
                         </li>
-                        <li class="step">
+                        <li class="step active">
+                            <span class="number">3</span>
                             <span class="fas fa-store"></span>
                             Go enjoy it at the restaurant
                         </li>
@@ -50,18 +62,25 @@
             </section>
         </header>
         <main class="main">
-            <article class="restaurant__card">
-                <div class="restaurant__card-image"></div>
-                <div class="restaurant__card-body">
-                    <div class="text">
-                        <h3 class="restaurant__card-title">The full palette</h3>
-                        <p class="restaurant__card-location">New York</p>
+            <section class="restaurants">
+                <h2 class="restaurants__title">
+                    Restaurants
+                </h2>
+                <article class="restaurant__card">
+                    <div class="restaurant__card-image image1"></div>
+                    <div class="restaurant__card-body">
+                        <div class="text">
+                            <h3 class="restaurant__card-title">The full palette</h3>
+                            <p class="restaurant__card-location">New York</p>
+                        </div>
+                        <div class="like">
+                            <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+                            <label for="checkbox" class="far-heart"><span class="far fa-heart"></span></label>
+                            <label for="checkbox" class="fas-heart"><span class="fas fa-heart"></span></label>
+                        </div>
                     </div>
-                    <div class="like">
-                        <span class="far fa-heart"></span>
-                    </div>
-                </div>
-            </article>
+                </article>
+            </section>
         </main>
         <footer class="footer">
             <header class="title">
