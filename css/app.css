@@ -282,22 +282,50 @@ table {
   font-weight: 800;
 }
 .main .restaurants .restaurant__card {
+  position: relative;
   border-radius: 15px;
   overflow: hidden;
+  margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(134, 134, 134, 0.432);
 }
-.main .restaurants .restaurant__card .image1 {
+.main .restaurants .restaurant__card.new::after {
+  content: "New";
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: #99e2d0;
+  color: #2b816c;
+  padding: 8px 25px;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-radius: 3px;
+}
+.main .restaurants .restaurant__card .image1, .main .restaurants .restaurant__card .image2, .main .restaurants .restaurant__card .image3, .main .restaurants .restaurant__card .image4 {
   width: 100%;
-  height: 14rem;
+  height: 13rem;
   background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
+.main .restaurants .restaurant__card .image2 {
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-position: center;
+  background-position-y: 60%;
+}
+.main .restaurants .restaurant__card .image3 {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+.main .restaurants .restaurant__card .image4 {
+  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
 .main .restaurants .restaurant__card .restaurant__card-body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 .main .restaurants .restaurant__card .restaurant__card-body .text, .main .restaurants .restaurant__card .restaurant__card-body .like {
   margin: 20px 15px;
@@ -342,13 +370,71 @@ table {
   display: none;
 }
 .main .restaurants .restaurant__card .restaurant__card-body .like .fas-heart span {
-  color: #FF79DA;
+  color: #9356DC;
 }
 .main .restaurants .restaurant__card .restaurant__card-body .like .checkbox:checked ~ .far-heart {
   display: none;
 }
 .main .restaurants .restaurant__card .restaurant__card-body .like .checkbox:checked ~ .fas-heart {
   display: block;
+}
+
+.footer {
+  background-color: #535353;
+  color: white;
+  padding: 1.2rem;
+}
+.footer .footer__title {
+  font-size: 1.4em;
+  font-family: "Shrikhand", cursive;
+}
+.footer .footer__list {
+  margin-top: 16px;
+  font-size: 1.1em;
+}
+.footer .footer__list li {
+  margin-bottom: 10px;
+}
+.footer .footer__list li span {
+  font-size: 0.9em;
+  display: inline-block;
+  width: 15px;
+  margin-right: 12px;
+}
+
+@media (min-width: 1200px) {
+  .site {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .header .help .help__title {
+    text-align: center;
+  }
+  .header .help .help__steps ul {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .help .help__steps ul .step {
+    width: 30%;
+  }
+
+  .main .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .main .restaurants .restaurants__title {
+    flex-basis: 100%;
+    padding: 0 16px 30px 0;
+    font-size: 2em;
+    font-weight: 800;
+    text-align: center;
+  }
+  .main .restaurants .restaurant__card {
+    flex-basis: 45%;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
