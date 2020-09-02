@@ -54,17 +54,24 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* CSS du loader */
 .loader__container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #99E2D0;
+  background-color: #ffffff;
   z-index: 9999;
   animation: desapear 1s linear forwards;
   animation-delay: 3s;
@@ -81,7 +88,7 @@ table {
   height: 8rem;
   text-align: center;
   line-height: 8rem;
-  border: 8px solid #fdcff0;
+  border: 8px solid #e4e4e4;
   border-radius: 50%;
   color: #FF79DA;
   position: relative;
@@ -90,7 +97,7 @@ table {
 .loader .image {
   height: 80px;
   width: 80px;
-  background-color: #99E2D0;
+  background-color: #ffffff;
   font-size: 4em;
   position: absolute;
   top: 20px;
@@ -112,7 +119,7 @@ table {
 }
 
 @keyframes ecrase {
-  to {
+  100% {
     height: 0;
   }
 }
@@ -127,7 +134,7 @@ table {
   border: 8px solid rgba(128, 128, 128, 0.548);
   border-radius: 50%;
   border-top-color: transparent;
-  animation: rotate 5s linear infinite reverse;
+  animation: rotate 3s ease-in-out infinite reverse;
 }
 
 .loader::after {
@@ -141,7 +148,7 @@ table {
   background-color: transparent;
   border-radius: 50%;
   border-top-color: #FF79DA;
-  animation: rotate 1s linear infinite;
+  animation: rotate 1s ease-in-out infinite;
 }
 
 @keyframes rotate {
@@ -283,6 +290,7 @@ table {
 }
 .main .restaurants .restaurant__card {
   position: relative;
+  display: block;
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 20px;
