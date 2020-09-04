@@ -1,0 +1,42 @@
+@media (min-width: 450px){
+    .site{
+        width: 450px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1200px){
+    .site{
+        width: 75%;
+        margin: 0 auto;
+    }
+    .header .help{
+        .help__title{
+            text-align: center;
+        }
+        .help__steps ul{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .step{
+                width: 30%;
+            }
+        }
+    }
+    .main {
+        .restaurants{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .restaurants__title{
+                flex-basis: 100%;
+                padding: 0 16px 30px 0;
+                font-size: 2em;
+                font-weight: 800;
+                text-align: center;
+            }
+            .restaurant__card{
+                flex-basis: 45%;  
+            }
+       }   
+    }
+}
