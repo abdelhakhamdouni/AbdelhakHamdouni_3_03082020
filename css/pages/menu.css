@@ -11,8 +11,8 @@ Page de full palette
 .header h1.site__title {
   box-shadow: none;
   text-align: center;
-  font-size: 2em;
-  padding: 15px;
+  font-size: 2.5em;
+  padding: 20px 0;
   font-weight: 800;
   font-family: "Shrikhand", cursive;
 }
@@ -24,7 +24,8 @@ Page de full palette
   z-index: 99999;
 }
 .header .back a span {
-  font-size: 1.4em;
+  font-size: 1.6em;
+  font-weight: 800;
 }
 
 .main {
@@ -39,6 +40,15 @@ Page de full palette
   background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
   background-position: center;
+}
+.main .image.bastille {
+  background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+.main .image.gourmand {
+  background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+.main .image.enchanted {
+  background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 .main .menu {
   padding: 0 16px;
@@ -57,6 +67,7 @@ Page de full palette
   font-weight: 900;
   font-size: 2em;
   font-family: "Shrikhand", cursive;
+  margin-left: 8px;
 }
 .main .menu header span {
   font-size: 1.6em;
@@ -201,13 +212,6 @@ Page de full palette
   animation: fade-in 1.5s 2.4s ease-in-out forwards;
   -webkit-animation: fade-in 1.5s 2.4s ease-in-out forwards;
   -moz-animation: fade-in 1.5s 2.4s ease-in-out forwards;
-}
-
-@keyframes fade-in {
-  to {
-    opacity: 1;
-    top: 0;
-  }
 }
 
 /*# sourceMappingURL=menu.css.map */
