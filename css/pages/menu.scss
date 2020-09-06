@@ -62,10 +62,6 @@ Page de full palette
             justify-content: space-between;
             align-items: center;
             padding-top: 30px;
-            span{
-                font-size: 1.6em;
-                margin-right: 16px;
-            }
         }
         .group{
             margin-top: 25px;
@@ -93,16 +89,19 @@ Page de full palette
                 padding: 0;
                 background-color: #fff;
                 border-radius: 16px;
-                box-shadow: 0 0 15px rgb(170, 170, 170);
+                box-shadow: 0 0 15px rgb(196, 196, 196);
                 overflow: hidden;
                 opacity: 0;
                 position: relative;
                 top: 20px;
+                height: 72px;
+
                 .group__item__description{
                     flex-basis: 100%;
                     display: flex;
-                    margin: 16px;
+                    padding: 16px;
                     justify-content: space-between;
+                    height: 40px;
                     .group__item__description__text{
                         flex-basis: 70%;
                         h3{
@@ -111,7 +110,11 @@ Page de full palette
                         }
                         p{
                             font-size: .9em;
-                            color: rgb(78, 78, 78);
+                            white-space: nowrap;
+                            font-size: 0.9em;
+                            text-overflow: ellipsis;
+                            color: #4e4e4e;
+                            overflow: hidden;
                         }
                     }
                     .group__item__price{
@@ -140,6 +143,15 @@ Page de full palette
                         transition: all .4s;
                     }
                 }
+                &:hover .group__item__description{
+                    width: 75%;
+                    .group__item__description__text{
+                        width: 75%;
+                    }
+                    .group__item__price{
+                        width: 50px;
+                    }
+                }
                 &:hover .group__item__selected{
                     width: 25%
                     }
@@ -160,57 +172,57 @@ Page de full palette
 }
 
 .group__item.item1{
-    animation: fade-in 1.5s  ease-in-out forwards;
-    -webkit-animation: fade-in 1.5s  ease-in-out forwards;
-    -moz-animation: fade-in 1.5s  ease-in-out forwards;
+    animation: fade-in 1s  ease-in-out forwards;
+    -webkit-animation: fade-in 1s  ease-in-out forwards;
+    -moz-animation: fade-in 1s  ease-in-out forwards;
     
 }
 .group__item.item2{
-    animation: fade-in 1.5s .2s ease-in-out forwards;
-    -webkit-animation: fade-in 1.5s .2s ease-in-out forwards;
-    -moz-animation: fade-in 1.5s .2s ease-in-out forwards;
+    animation: fade-in 1s .2s ease-in-out forwards;
+    -webkit-animation: fade-in 1s .2s ease-in-out forwards;
+    -moz-animation: fade-in 1s .2s ease-in-out forwards;
     
 }
 .group__item.item3{
-    animation: fade-in 1.5s .4s ease-in-out forwards;
-    -webkit-animation: fade-in 1.5s .4s ease-in-out forwards;
-    -moz-animation: fade-in 1.5s .4s ease-in-out forwards;
+    animation: fade-in 1s .4s ease-in-out forwards;
+    -webkit-animation: fade-in 1s .4s ease-in-out forwards;
+    -moz-animation: fade-in 1s .4s ease-in-out forwards;
     
 }
 .group__item.item4{
-    animation: fade-in 1.5s .6s ease-in-out forwards;
-    -webkit-animation: fade-in 1.5s .6s ease-in-out forwards;
-    -moz-animation: fade-in 1.5s .6s ease-in-out forwards;
+    animation: fade-in 1s .6s ease-in-out forwards;
+    -webkit-animation: fade-in 1s .6s ease-in-out forwards;
+    -moz-animation: fade-in 1s .6s ease-in-out forwards;
     
 }
 .group__item.item5{
-    animation: fade-in 1.5s .8s ease-in-out forwards;
-    -webkit-animation: fade-in 1.5s .8s ease-in-out forwards;
-    -moz-animation: fade-in 1.5s .8s ease-in-out forwards;
+    animation: fade-in 1s .8s ease-in-out forwards;
+    -webkit-animation: fade-in 1s .8s ease-in-out forwards;
+    -moz-animation: fade-in 1s .8s ease-in-out forwards;
     
 }
 .group__item.item6{
-    animation: fade-in 1.5s 1s ease-in-out forwards;
-    -webkit-animation: fade-in 1.5s 1s ease-in-out forwards;
-    -moz-animation: fade-in 1.5s 1s ease-in-out forwards;
+    animation: fade-in 1s 1s ease-in-out forwards;
+    -webkit-animation: fade-in 1s 1s ease-in-out forwards;
+    -moz-animation: fade-in 1s 1s ease-in-out forwards;
     
 }
 .group__item.item7{
-    animation: fade-in 1.5s 1.2s ease-in-out forwards;
-    -webkit-animation: fade-in 1.5s 1.2s ease-in-out forwards;
-    -moz-animation: fade-in 1.5s 1.2s ease-in-out forwards;
+    animation: fade-in 1s 1.2s ease-in-out forwards;
+    -webkit-animation: fade-in 1s 1.2s ease-in-out forwards;
+    -moz-animation: fade-in 1s 1.2s ease-in-out forwards;
     
 }
 .group__item.item8{
-    animation: fade-in 1.5s 1.4s ease-in-out forwards;
-    -webkit-animation: fade-in 1.5s 1.4s ease-in-out forwards;
-    -moz-animation: fade-in 1.5s 1.4s ease-in-out forwards;
+    animation: fade-in 1s 1.4s ease-in-out forwards;
+    -webkit-animation: fade-in 1s 1.4s ease-in-out forwards;
+    -moz-animation: fade-in 1s 1.4s ease-in-out forwards;
     
 }
 .group__item.item9{
-    animation: fade-in 1.5s 1.6s ease-in-out forwards;
-    -webkit-animation: fade-in 1.5s 1.6s ease-in-out forwards;
-    -moz-animation: fade-in 1.5s 1.6s ease-in-out forwards;
+    animation: fade-in 1s 1.6s ease-in-out forwards;
+    -webkit-animation: fade-in 1s 1.6s ease-in-out forwards;
+    -moz-animation: fade-in 1s 1.6s ease-in-out forwards;
     
 }
 

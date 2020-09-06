@@ -81,46 +81,6 @@ a {
     transform: rotate(360deg);
   }
 }
-@media (min-width: 450px) {
-  .site {
-    width: 450px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 1200px) {
-  .site {
-    width: 75%;
-    margin: 0 auto;
-  }
-
-  .header .help .help__title {
-    text-align: center;
-  }
-  .header .help .help__steps ul {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header .help .help__steps ul .step {
-    width: 30%;
-  }
-
-  .main .restaurants {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .main .restaurants .restaurants__title {
-    flex-basis: 100%;
-    padding: 0 16px 30px 0;
-    font-size: 2em;
-    font-weight: 800;
-    text-align: center;
-  }
-  .main .restaurants .restaurant__card {
-    flex-basis: 45%;
-  }
-}
 /* CSS du loader */
 .loader__container {
   position: fixed;
@@ -219,6 +179,45 @@ a {
 .intro__action:hover {
   background: linear-gradient(to bottom right, #9356DC, #FF79DA);
   transform: scale(1.01);
+}
+
+.like {
+  position: relative;
+  padding-right: 30px;
+}
+.like span {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6em;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.like .checkbox {
+  visibility: hidden;
+}
+.like .far-heart:hover {
+  display: none;
+}
+.like .far-heart:hover ~ .fas-heart {
+  display: block;
+}
+.like .fas-heart:hover {
+  display: block;
+}
+.like .fas-heart {
+  display: none;
+}
+.like .fas-heart span {
+  color: #9356DC;
+}
+.like .checkbox:checked ~ .far-heart {
+  display: none;
+}
+.like .checkbox:checked ~ .fas-heart {
+  display: block;
 }
 
 /* CSS du site  */
@@ -389,44 +388,6 @@ a {
   color: gray;
   margin-top: 5px;
 }
-.main .restaurants .restaurant__card .restaurant__card-body .like {
-  position: relative;
-  padding-right: 30px;
-}
-.main .restaurants .restaurant__card .restaurant__card-body .like span {
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.6em;
-  cursor: pointer;
-  transition: all 1s ease;
-}
-.main .restaurants .restaurant__card .restaurant__card-body .like .checkbox {
-  visibility: hidden;
-}
-.main .restaurants .restaurant__card .restaurant__card-body .like .far-heart:hover {
-  display: none;
-}
-.main .restaurants .restaurant__card .restaurant__card-body .like .far-heart:hover ~ .fas-heart {
-  display: block;
-}
-.main .restaurants .restaurant__card .restaurant__card-body .like .fas-heart:hover {
-  display: block;
-}
-.main .restaurants .restaurant__card .restaurant__card-body .like .fas-heart {
-  display: none;
-}
-.main .restaurants .restaurant__card .restaurant__card-body .like .fas-heart span {
-  color: #9356DC;
-}
-.main .restaurants .restaurant__card .restaurant__card-body .like .checkbox:checked ~ .far-heart {
-  display: none;
-}
-.main .restaurants .restaurant__card .restaurant__card-body .like .checkbox:checked ~ .fas-heart {
-  display: block;
-}
 
 .footer {
   background-color: #535353;
@@ -449,6 +410,88 @@ a {
   display: inline-block;
   width: 15px;
   margin-right: 12px;
+}
+
+@media (min-width: 450px) {
+  .site {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .site {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .header .help .help__title {
+    text-align: center;
+  }
+  .header .help .help__steps ul {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .help .help__steps ul .step {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 16px;
+  }
+  .header .help .help__steps ul .step .number {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    transform: translateY(-50%);
+  }
+  .header .help .help__steps ul .step .fas {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+
+  .main .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .main .restaurants .restaurants__title {
+    flex-basis: 100%;
+    padding: 0 16px 30px 0;
+    font-size: 2em;
+    font-weight: 800;
+    text-align: center;
+  }
+  .main .restaurants .restaurant__card {
+    flex-basis: 45%;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .menu header, .menu .button__order {
+    flex-basis: 100%;
+  }
+  .menu header span {
+    cursor: pointer;
+  }
+  .menu header span:hover {
+    display: none;
+  }
+  .menu .group {
+    width: 45%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #c4c4c4;
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
