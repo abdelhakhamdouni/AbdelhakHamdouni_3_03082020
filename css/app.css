@@ -815,5 +815,8 @@ Page de full palette
     padding: 20px;
   }
 }
+.header .intro {
+  padding: 3% 15%;
+}
 
 /*# sourceMappingURL=app.css.map */
