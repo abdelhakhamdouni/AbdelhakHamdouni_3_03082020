@@ -308,7 +308,7 @@ a {
   display: flex;
   align-items: center;
   transition: all 0.4s ease-in-out;
-  animation: steps-step 1s linear 1s;
+  animation: steps-step 1s linear 4s;
 }
 .header .help .help__steps ul .step .number {
   display: inline-block;
@@ -343,10 +343,10 @@ a {
   box-shadow: 0 3px 5px 2px gray;
 }
 .header .help .help__steps ul .step2 {
-  animation-delay: 1.5s;
+  animation-delay: 4.5s;
 }
 .header .help .help__steps ul .step3 {
-  animation-delay: 2s;
+  animation-delay: 5s;
 }
 
 .main {

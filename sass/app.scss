@@ -82,7 +82,7 @@
                 display: flex;
                 align-items: center;
                 transition: all .4s ease-in-out;
-                animation: steps-step 1s linear 1s;
+                animation: steps-step 1s linear 4s;
                 .number{
                     display: inline-block;
                     height: 30px;
@@ -118,8 +118,8 @@
                 }
                 
             }
-            .step2{animation-delay: 1.5s;}
-            .step3{animation-delay: 2s;}
+            .step2{animation-delay: 4.5s;}
+            .step3{animation-delay: 5s;}
         }
     }
     
