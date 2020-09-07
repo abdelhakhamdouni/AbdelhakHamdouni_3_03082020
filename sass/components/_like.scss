@@ -1,0 +1,39 @@
+.like{
+    position: relative;
+    padding-right: 30px;
+    span{
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.6em;
+        cursor: pointer;
+        transition: all 1s ease;  
+    }
+    .checkbox{
+        visibility: hidden;;
+    }
+    .far-heart:hover{
+        display: none;
+        & ~ .fas-heart{
+            display: block;
+        }
+    }
+    .fas-heart:hover{
+        display: block;
+    }
+    .fas-heart{
+        display: none;
+        span{
+            color: $primary;
+        }
+    }
+    .checkbox:checked ~ .far-heart{
+        display: none;
+    }
+    .checkbox:checked ~ .fas-heart{
+        display: block;
+    }
+    
+}

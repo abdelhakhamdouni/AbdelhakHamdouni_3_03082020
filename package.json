@@ -1,0 +1,24 @@
+{
+  "name": "abdelhakhamdouni_3_03082020",
+  "version": "1.0.0",
+  "description": "projet 3 de openclassroom pour apprendre css",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/app.scss:./css/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdelhakhamdouni/AbdelhakHamdouni_3_03082020.git"
+  },
+  "author": "abdelhak hamdouni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdelhakhamdouni/AbdelhakHamdouni_3_03082020/issues"
+  },
+  "homepage": "https://github.com/abdelhakhamdouni/AbdelhakHamdouni_3_03082020#readme",
+  "dependencies": {
+    "sas": "^3.0.4",
+    "sass": "^1.26.10"
+  }
+}
