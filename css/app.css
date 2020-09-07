@@ -477,6 +477,8 @@ a {
   position: relative;
   top: 20px;
   height: 72px;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 .group__item .group__item__description {
   flex-basis: 100%;
@@ -522,6 +524,9 @@ a {
 }
 .group__item .group__item__selected span {
   transition: all 0.4s;
+}
+.group__item:hover {
+  box-shadow: 0 0 10px #99E2D0;
 }
 .group__item:hover .group__item__description {
   width: 75%;

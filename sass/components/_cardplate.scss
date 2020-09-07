@@ -11,6 +11,8 @@
     position: relative;
     top: 20px;
     height: 72px;
+    transition: all .2s ease;
+    cursor: pointer;
 
     .group__item__description{
         flex-basis: 100%;
@@ -58,6 +60,10 @@
         span{
             transition: all .4s;
         }
+    }
+    &:hover{
+        //transform: translateY(-2px) scale(1.01);
+        box-shadow: 0 0 10px $tertiare;
     }
     &:hover .group__item__description{
         width: 75%;
