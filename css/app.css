@@ -81,6 +81,20 @@ a {
     transform: rotate(360deg);
   }
 }
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(2);
+    border-width: 0px;
+    opacity: 0;
+  }
+}
+@keyframes steps-step {
+  50% {
+    transform: translateY(-5px) scale(1.06);
+    background-color: #bf8dfd;
+    box-shadow: 0 3px 5px 2px gray;
+  }
+}
 /* CSS du loader */
 .loader__container {
   position: fixed;
@@ -293,6 +307,8 @@ a {
   font-weight: 600;
   display: flex;
   align-items: center;
+  transition: all 0.4s ease-in-out;
+  animation: steps-step 1s linear 1s;
 }
 .header .help .help__steps ul .step .number {
   display: inline-block;
@@ -318,6 +334,20 @@ a {
   font-size: 1.1em;
   margin-right: 20px;
 }
+.header .help .help__steps ul .step:hover .number {
+  box-shadow: 0 0 10px gray;
+  transform: scale(1.1);
+}
+.header .help .help__steps ul .step:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 3px 5px 2px gray;
+}
+.header .help .help__steps ul .step2 {
+  animation-delay: 1.5s;
+}
+.header .help .help__steps ul .step3 {
+  animation-delay: 2s;
+}
 
 .main {
   background-color: #f0f0f0;
@@ -331,10 +361,15 @@ a {
 .main .restaurants .restaurant__card {
   position: relative;
   display: block;
+  transition: all 0.3s ease-in-out;
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(134, 134, 134, 0.432);
+}
+.main .restaurants .restaurant__card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 0 10px gray;
 }
 .main .restaurants .restaurant__card.new::after {
   content: "New";
@@ -388,6 +423,9 @@ a {
   color: gray;
   margin-top: 5px;
 }
+.main .restaurants .restaurant__card .restaurant__card-body .like {
+  display: block;
+}
 
 .footer {
   background-color: #535353;
@@ -401,9 +439,17 @@ a {
 .footer .footer__list {
   margin-top: 16px;
   font-size: 1.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 .footer .footer__list li {
   margin-bottom: 10px;
+  cursor: pointer;
+}
+.footer .footer__list li:hover {
+  color: #FF79DA;
 }
 .footer .footer__list li span {
   font-size: 0.9em;
@@ -450,6 +496,10 @@ a {
     margin: 0;
     transform: translateY(-50%);
   }
+  .header .help .help__steps ul .step:hover .number {
+    box-shadow: 0 0 10px gray;
+    transform: translateY(-50%) scale(1.1);
+  }
   .header .help .help__steps ul .step .fas {
     margin: 0;
     margin-bottom: 20px;
@@ -472,6 +522,11 @@ a {
     flex-basis: 45%;
   }
 
+  .main header.image {
+    height: 25rem;
+    background-position: center center;
+  }
+
   .menu {
     display: flex;
     flex-wrap: wrap;
@@ -491,6 +546,20 @@ a {
     border-radius: 15px;
     box-shadow: 0 0 20px #c4c4c4;
     padding: 20px;
+  }
+
+  .footer .footer__title {
+    text-align: center;
+  }
+  .footer .footer__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+  .footer .footer__list li {
+    margin: 15px;
   }
 }
 

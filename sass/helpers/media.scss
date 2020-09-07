@@ -34,6 +34,10 @@
                     margin: 0;
                     transform: translateY(-50%);
                 }
+                &:hover .number{
+                    box-shadow: 0 0 10px gray;
+                    transform: translateY(-50%) scale(1.1);
+                }
                 .fas{
                     margin: 0;
                     margin-bottom: 20px;
@@ -59,8 +63,13 @@
                 flex-basis: 45%;  
             }
        }   
-    }
+    }  
+    .main header.image{
+            height: 25rem;
+            background-position: center center;
+        }
     .menu{
+      
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -80,6 +89,22 @@
             border-radius: 15px;
             box-shadow: 0 0 20px rgb(196, 196, 196);
             padding: 20px
+            
+        }
+    }
+    .footer{
+        .footer__title{
+            text-align: center;
+        }
+        .footer__list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 30px;
+            li{
+                margin: 15px;
+            }
             
         }
     }
