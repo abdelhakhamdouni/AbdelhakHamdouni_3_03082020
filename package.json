@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./sass/app.scss:./css/app.css"
+    "sass": "sass --watch ./sass/app.scss:./css/app.css --style compressed",
+    "prefix": "postcss ./css/app.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,7 @@
   },
   "author": "abdelhak hamdouni",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/abdelhakhamdouni/AbdelhakHamdouni_3_03082020/issues"
   },
