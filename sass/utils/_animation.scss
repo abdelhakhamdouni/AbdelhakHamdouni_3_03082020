@@ -36,3 +36,8 @@
         box-shadow: 0 3px 5px 2px gray;
     }
 }
+
+
+@keyframes steps-fade-down{100%{top: 0}}
+@keyframes steps-fade-left{100%{left: 0;}}
+@keyframes steps-fade-right{100%{right: 0;}}

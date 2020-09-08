@@ -2,13 +2,13 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
+@import "./utils/animation";
 
 @import "./base/base";
 @import "./base/typography";
 
 @import "./components/buttons";
 @import "./components/introaction";
-@import "./components/animation";
 @import "./components/like";
 @import "./components/loader";
 @import "./components/footer";
