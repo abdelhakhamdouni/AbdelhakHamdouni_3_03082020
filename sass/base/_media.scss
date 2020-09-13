@@ -1,15 +1,10 @@
-@media (min-width: 450px){
-    .site{
-        width: 450px;
-        margin: 0 auto;
-    }
-}
+
 @media (max-width: 1199px){
     .header .help .help__steps ul  :nth-child(1) {animation: steps-fade-down 1s 4s linear both;}
     .header .help .help__steps ul :nth-child(2) {animation: steps-fade-left 1s 4.5s linear both;}
     .header .help .help__steps ul  :nth-child(3) {animation: steps-fade-right 1s 5s linear both;}
 }
-@media (min-width: 1200px){
+@media (min-width: 1024px){
     .site{
         width: 75%;
         margin: 0 auto;
