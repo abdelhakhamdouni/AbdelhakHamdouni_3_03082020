@@ -21,19 +21,19 @@
     height: 8rem;
     text-align: center;
     line-height: 8rem;
-    border: 8px solid #e4e4e4;
+    border: .7rem solid #e4e4e4;
     border-radius: 50%;
     color: #FF79DA;
     position: relative;
     box-shadow: 0 0 20px 8px grey;
     .image{
-        height: 80px;
-        width: 80px;
+        height: 5rem;
+        width: 5rem;
         background-color: #ffffff;
         font-size: 4em;
         position: absolute;
-        top: 20px;
-        left: 20px;
+        top: 1.3rem;
+        left: 1.3rem;
         z-index: 100;
         animation: ecrase 3s linear forwards;
     }
@@ -56,12 +56,12 @@
 .loader::before{
     content: '';
     position: absolute;
-    top: -8px;
-    left: -8px;
+    top: -.5rem;
+    left: -.5rem;
     width: 8rem;
     height: 8rem;
     background-color: transparent;
-    border: 8px solid rgba(128, 128, 128, 0.548);
+    border: .5rem solid rgba(128, 128, 128, 0.548);
     border-radius: 50%;
     border-top-color:  transparent;
     animation: rotate 3s ease-in-out infinite reverse;
