@@ -11,29 +11,20 @@
         cursor: pointer;
         transition: all 1s ease;  
     }
-    .checkbox{
-        visibility: hidden;;
-    }
-    .far-heart:hover{
+    .fas{
         display: none;
-        & ~ .fas-heart{
-            display: block;
-        }
+        color: $primary; 
     }
-    .fas-heart:hover{
+    .far:hover{
+        display: none;
+    }
+    .far:hover ~ .fas{
         display: block;
     }
-    .fas-heart{
-        display: none;
-        span{
-            color: $primary;
-        }
-    }
-    .checkbox:checked ~ .far-heart{
-        display: none;
-    }
-    .checkbox:checked ~ .fas-heart{
+
+    .fas:hover{
         display: block;
     }
+    
     
 }
