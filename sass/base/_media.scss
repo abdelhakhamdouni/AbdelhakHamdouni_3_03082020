@@ -109,3 +109,17 @@
 .header .intro{
     padding: 3% 15%;
 }
+
+@media (min-width: 635px){
+    .restaurants{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .restaurants__title{
+            flex-basis: 100%;
+        }
+        .restaurant__card{
+            flex-basis: 45%;  
+        }
+   }   
+}
