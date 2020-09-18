@@ -107,11 +107,11 @@
                 }
                 
             }
-        //     .step2{animation-delay: 4.5s;}
-        //     .step3{animation-delay: 5s;}
-        //    & :nth-child(1){top: -200px;}
-        //    & :nth-child(2){left: -150%;}
-        //    & :nth-child(3){right: -150%;}
+            .step2{animation-delay: 4.5s;}
+            .step3{animation-delay: 5s;}
+           & :nth-child(1){top: -200px;}
+           & :nth-child(2){left: -150%;}
+           & :nth-child(3){right: -150%;}
         }
     }
 }
