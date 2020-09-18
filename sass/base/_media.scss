@@ -1,19 +1,13 @@
-@media (max-width: 567px){
-    .site{
-        width: 450px;
-        margin: 0 auto;
-    }
-}
-@media (min-width: 567px) and (max-width: 990px){
-    .site{
-        width: 100%;
-    }
+.site{
+    width: 100%
 }
 
-@media (min-width: 990px){
-    .header .help .help__steps ul  :nth-child(1) {animation: steps-fade-down 1s 4s linear both;}
-    .header .help .help__steps ul :nth-child(2) {animation: steps-fade-left 1s 4.5s linear both;}
-    .header .help .help__steps ul  :nth-child(3) {animation: steps-fade-right 1s 5s linear both;}
+@media (max-width: 1199px){
+    // .header .help .help__steps ul  :nth-child(1) {animation: steps-fade-down 1s 4s linear both;}
+    // .header .help .help__steps ul :nth-child(2) {animation: steps-fade-left 1s 4.5s linear both;}
+    // .header .help .help__steps ul  :nth-child(3) {animation: steps-fade-right 1s 5s linear both;}
+}
+@media (min-width: 1199px){
     .site{
         width: 75%;
         margin: 0 auto;
@@ -54,14 +48,14 @@
 
                 }
             }
-            & :nth-child(1){top: 0; left: 300%}
-            & :nth-child(2){top: 0; left: 300%}
-            & :nth-child(3){top: 0; left: 300%}
+            // & :nth-child(1){top: 0; left: 300%}
+            // & :nth-child(2){top: 0; left: 300%}
+            // & :nth-child(3){top: 0; left: 300%}
         }
     }
-    .header .help .help__steps ul  :nth-child(1) {animation: steps-fade-left 1s 4s linear both;}
-    .header .help .help__steps ul :nth-child(2) {animation: steps-fade-left 1s 4.5s linear both;}
-    .header .help .help__steps ul  :nth-child(3) {animation: steps-fade-left 1s 5s linear both;}
+    // .header .help .help__steps ul  :nth-child(1) {animation: steps-fade-left 1s 4s linear both;}
+    // .header .help .help__steps ul :nth-child(2) {animation: steps-fade-left 1s 4.5s linear both;}
+    // .header .help .help__steps ul  :nth-child(3) {animation: steps-fade-left 1s 5s linear both;}
     .main {
         .restaurants{
             display: flex;
