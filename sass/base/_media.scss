@@ -51,9 +51,9 @@
 
                 }
             }
-            & :nth-child(1){top: 0; left: 300%}
-            & :nth-child(2){top: 0; left: 300%}
-            & :nth-child(3){top: 0; left: 300%}
+            & :nth-child(1){top: 0 !important; left: 300% !important}
+            & :nth-child(2){top: 0 !important; left: 300% !important}
+            & :nth-child(3){top: 0 !important; left: 300% !important}
         }
     }
     .header .help .help__steps ul  :nth-child(1) {animation: steps-fade-left 1s 4s linear both;}
